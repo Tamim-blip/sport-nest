@@ -16,7 +16,7 @@ import BookingForm from '../_component/bookingForm';
 import { auth } from '@/lib/auth';
 import { headers } from 'next/headers';
 
-const FacilityDetail = async({params}: {params: Promise< string>}) => {
+const FacilityDetail = async({params}: {params: Promise<{ detailID: string }>}) => {
 
     const {detailID} = await params
 
